@@ -384,10 +384,3 @@ MIT License
 
 If you use this system in your research, please cite:
 
-```bibtex
-@software{recsys_pipeline,
-  title = {Industrial Multi-Stage Recommendation System Pipeline},
-  year = {2024},
-  framework = {RecBole v1.2.0}
-}
-```
