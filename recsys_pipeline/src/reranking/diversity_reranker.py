@@ -203,9 +203,9 @@ class DiversityReranker:
                     continue
                 seller_counts[seller] = current_count + 1
             
-            filtered.append(row)
+            filtered.append(row.to_dict())
         
-        result = pd.DataFrame(filtered)
+        result = pd.DataFrame.from_records(filtered)
         if len(result) > 0:
             result['final_rank'] = range(1, len(result) + 1)
         
@@ -239,6 +239,7 @@ class DiversityReranker:
         
         # Apply constraints
         final_df = self.apply_constraints(final_df)
+        self.logger.info(f"Final columns: {final_df.columns.tolist()}")
         
         # Compute diversity metrics
         diversity_metrics = self._compute_diversity_metrics(final_df)
