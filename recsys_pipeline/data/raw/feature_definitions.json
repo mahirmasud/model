@@ -1,0 +1,56 @@
+{
+  "features": [
+    {
+      "name": "age_group",
+      "type": "categorical",
+      "source": "user"
+    },
+    {
+      "name": "gender",
+      "type": "categorical",
+      "source": "user"
+    },
+    {
+      "name": "location",
+      "type": "categorical",
+      "source": "user"
+    },
+    {
+      "name": "total_purchases",
+      "type": "numerical",
+      "source": "user"
+    },
+    {
+      "name": "avg_rating",
+      "type": "numerical",
+      "source": "user"
+    },
+    {
+      "name": "category",
+      "type": "categorical",
+      "source": "item"
+    },
+    {
+      "name": "brand",
+      "type": "categorical",
+      "source": "item"
+    },
+    {
+      "name": "price",
+      "type": "numerical",
+      "source": "item"
+    },
+    {
+      "name": "rating",
+      "type": "numerical",
+      "source": "item"
+    },
+    {
+      "name": "review_count",
+      "type": "numerical",
+      "source": "item"
+    }
+  ],
+  "target": "INTERACTION",
+  "version": "1.0"
+}
