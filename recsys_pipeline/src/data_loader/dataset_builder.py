@@ -68,7 +68,7 @@ class DatasetBuilder:
         self.logger.info(f"Loading data from {raw_dir}")
         
         # Load cleaned dataset (main interactions)
-        cleaned_file = raw_dir / input_files.get('cleaned_dataset', 'cleaned_dataset.parquet')
+        cleaned_file = raw_dir / input_files.get('cleaned_data', 'cleaned_data.parquet')
         if cleaned_file.exists():
             self.interactions_df = load_parquet(cleaned_file)
             self.logger.info(f"Loaded cleaned dataset: {len(self.interactions_df)} rows")
